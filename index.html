@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mortgage Overpayment Calculator — Save Interest & Pay Off Early | Tabutility</title>
+  <meta name="description" content="See exactly how much interest you save and how many years you cut by overpaying your mortgage. Enter your balance, rate and overpayment to get an instant breakdown." />
+  <link rel="canonical" href="https://mortgage-overpayment-calculator.tabutility.com/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://mortgage-overpayment-calculator.tabutility.com/" />
+  <meta property="og:title" content="Mortgage Overpayment Calculator — Save Interest & Pay Off Early" />
+  <meta property="og:description" content="See exactly how much interest you save and how many years you cut by overpaying your mortgage." />
+  <meta property="og:site_name" content="Tabutility" />
+  <meta name="twitter:card" content="summary" />
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>" />
+  <meta name="theme-color" content="#1a1a2e" />
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"Mortgage Overpayment Calculator","url":"https://mortgage-overpayment-calculator.tabutility.com/","description":"Calculate how much interest you save and how early you pay off your mortgage by making overpayments.","applicationCategory":"FinanceApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0","priceCurrency":"GBP"}}</script>
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7039091592734005" crossorigin="anonymous"></script>
+  <script>window.addEventListener('load',function(){var s=document.createElement('script');s.async=true;s.src='https://www.googletagmanager.com/gtag/js?id=G-78VZWJ5B1W';document.head.appendChild(s);window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}window.gtag=gtag;gtag('js',new Date());gtag('config','G-78VZWJ5B1W');});</script>
+  <style>
+    *,*::before,*::after{box-sizing:border-box}
+    body{margin:0;font-family:'Segoe UI',system-ui,Arial,sans-serif;background:#f8fafc;color:#1e293b;line-height:1.6}
+    a{color:#4f46e5;text-decoration:none}
+    nav{background:#1a1a2e;padding:14px 20px;display:flex;align-items:center;justify-content:space-between;position:sticky;top:0;z-index:100}
+    .nav-brand{color:#fff;font-size:18px;font-weight:800}
+    .nav-links a{color:rgba(255,255,255,0.8);font-size:14px;margin-left:20px;font-weight:500}
+    .nav-links a:hover{color:#fff}
+    .hero{background:linear-gradient(135deg,#1a1a2e,#16213e);color:#fff;padding:40px 20px 32px;text-align:center}
+    .hero h1{font-size:clamp(24px,4vw,38px);font-weight:900;margin:0 0 10px;letter-spacing:-0.5px}
+    .hero p{color:rgba(255,255,255,0.75);margin:0;font-size:16px}
+    .wrap{max-width:760px;margin:0 auto;padding:32px 20px 60px}
+    .card{background:#fff;border-radius:16px;padding:28px;box-shadow:0 2px 16px rgba(0,0,0,0.07);margin-bottom:24px;border:1.5px solid #e8ecf2}
+    .card h2{font-size:18px;font-weight:800;margin:0 0 20px;color:#1e293b}
+    .grid-2{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+    @media(max-width:560px){.grid-2{grid-template-columns:1fr}}
+    label{display:block;font-size:13px;font-weight:600;color:#64748b;margin-bottom:6px;text-transform:uppercase;letter-spacing:0.4px}
+    input{width:100%;padding:12px 14px;border:2px solid #e2e8f0;border-radius:10px;font-size:16px;color:#1e293b;background:#f8fafc;transition:border 0.2s;outline:none}
+    input:focus{border-color:#4f46e5;background:#fff}
+    .prefix-wrap{position:relative}
+    .prefix{position:absolute;left:12px;top:50%;transform:translateY(-50%);color:#64748b;font-weight:600;font-size:16px;pointer-events:none}
+    .prefix-wrap input{padding-left:28px}
+    .suffix-wrap{position:relative}
+    .suffix{position:absolute;right:12px;top:50%;transform:translateY(-50%);color:#64748b;font-weight:600;font-size:14px;pointer-events:none}
+    .suffix-wrap input{padding-right:40px}
+    .btn{width:100%;padding:15px;background:#4f46e5;color:#fff;border:none;border-radius:12px;font-size:17px;font-weight:700;cursor:pointer;margin-top:20px;transition:background 0.2s}
+    .btn:hover{background:#4338ca}
+    .results{display:none}
+    .results.show{display:block}
+    .highlight{background:linear-gradient(135deg,#4f46e5,#7c3aed);color:#fff;border-radius:16px;padding:28px;text-align:center;margin-bottom:20px}
+    .highlight .big{font-size:clamp(32px,6vw,52px);font-weight:900;line-height:1}
+    .highlight .lbl{font-size:14px;color:rgba(255,255,255,0.8);margin-top:6px}
+    .stats-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-bottom:20px}
+    @media(max-width:500px){.stats-grid{grid-template-columns:1fr 1fr}}
+    .stat{background:#fff;border-radius:12px;padding:16px;text-align:center;border:1.5px solid #e8ecf2}
+    .stat .val{font-size:22px;font-weight:800;color:#4f46e5}
+    .stat .key{font-size:12px;color:#64748b;margin-top:3px}
+    .comparison{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+    .col{background:#f8fafc;border-radius:12px;padding:16px;border:1.5px solid #e2e8f0}
+    .col.highlight-col{border-color:#4f46e5;background:#f0f0ff}
+    .col h3{font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:0.5px;color:#64748b;margin:0 0 12px}
+    .col.highlight-col h3{color:#4f46e5}
+    .col-row{display:flex;justify-content:space-between;align-items:center;padding:6px 0;border-bottom:1px solid #e2e8f0;font-size:14px}
+    .col-row:last-child{border-bottom:none;font-weight:700}
+    .ad-wrap{margin:24px 0;text-align:center;min-height:90px;background:#f8fafc;border-radius:8px;display:flex;align-items:center;justify-content:center}
+    .info{background:#f0f9ff;border-left:4px solid #0ea5e9;border-radius:0 8px 8px 0;padding:14px 16px;font-size:14px;color:#0c4a6e;margin-bottom:20px}
+    footer{background:#1a1a2e;color:rgba(255,255,255,0.6);text-align:center;padding:24px 20px;font-size:14px}
+    footer a{color:#818cf8}
+  </style>
+</head>
+<body>
+<nav>
+  <a href="https://tabutility.com" class="nav-brand">⚡ Tabutility</a>
+  <div class="nav-links">
+    <a href="https://tabutility.com">All Tools</a>
+    <a href="https://tabutility.com/blog/">Blog</a>
+  </div>
+</nav>
+
+<div class="hero">
+  <h1>🏠 Mortgage Overpayment Calculator</h1>
+  <p>See how much interest you save — and how early you pay off — by overpaying each month</p>
+</div>
+
+<div class="wrap">
+  <div class="card">
+    <h2>Your Mortgage Details</h2>
+    <div class="grid-2">
+      <div>
+        <label>Outstanding Balance</label>
+        <div class="prefix-wrap"><span class="prefix">£</span><input type="number" id="balance" value="250000" min="1000" step="1000" /></div>
+      </div>
+      <div>
+        <label>Annual Interest Rate</label>
+        <div class="suffix-wrap"><input type="number" id="rate" value="4.5" min="0.1" max="20" step="0.01" /><span class="suffix">%</span></div>
+      </div>
+      <div>
+        <label>Remaining Term</label>
+        <div class="suffix-wrap"><input type="number" id="term" value="25" min="1" max="40" step="1" /><span class="suffix">yrs</span></div>
+      </div>
+      <div>
+        <label>Monthly Overpayment</label>
+        <div class="prefix-wrap"><span class="prefix">£</span><input type="number" id="overpay" value="200" min="0" step="50" /></div>
+      </div>
+    </div>
+    <button class="btn" onclick="calculate()">Calculate Savings →</button>
+  </div>
+
+  <div class="results" id="results">
+    <div class="highlight">
+      <div class="big" id="r-interest-saved">£0</div>
+      <div class="lbl">Total interest saved by overpaying</div>
+    </div>
+
+    <div class="stats-grid">
+      <div class="stat"><div class="val" id="r-years-saved">0</div><div class="key">Years saved</div></div>
+      <div class="stat"><div class="val" id="r-months-saved">0</div><div class="key">Months saved</div></div>
+      <div class="stat"><div class="val" id="r-new-payoff">0</div><div class="key">New payoff year</div></div>
+    </div>
+
+    <div class="comparison">
+      <div class="col">
+        <h3>Without Overpaying</h3>
+        <div class="col-row"><span>Monthly payment</span><span id="r-base-payment">-</span></div>
+        <div class="col-row"><span>Total paid</span><span id="r-base-total">-</span></div>
+        <div class="col-row"><span>Total interest</span><span id="r-base-interest">-</span></div>
+        <div class="col-row"><span>Payoff date</span><span id="r-base-date">-</span></div>
+      </div>
+      <div class="col highlight-col">
+        <h3>✓ With Overpaying</h3>
+        <div class="col-row"><span>Monthly payment</span><span id="r-new-payment">-</span></div>
+        <div class="col-row"><span>Total paid</span><span id="r-new-total">-</span></div>
+        <div class="col-row"><span>Total interest</span><span id="r-new-interest">-</span></div>
+        <div class="col-row"><span>Payoff date</span><span id="r-new-date">-</span></div>
+      </div>
+    </div>
+
+    <div class="ad-wrap" style="margin-top:20px">
+      <ins class="adsbygoogle" style="display:block;width:100%;min-height:90px" data-ad-client="ca-pub-7039091592734005" data-ad-slot="auto" data-ad-format="auto" data-full-width-responsive="true"></ins>
+    </div>
+
+    <div class="info">💡 Most UK mortgage lenders allow up to 10% of the outstanding balance as overpayments per year without early repayment charges. Check your mortgage terms before overpaying.</div>
+  </div>
+
+  <div class="ad-wrap">
+    <ins class="adsbygoogle" style="display:block;width:100%;min-height:90px" data-ad-client="ca-pub-7039091592734005" data-ad-slot="auto" data-ad-format="auto" data-full-width-responsive="true"></ins>
+  </div>
+
+  <div class="card">
+    <h2>How mortgage overpayments work</h2>
+    <p style="font-size:14px;color:#475569;margin:0 0 10px">Every pound you overpay reduces your outstanding balance immediately, which reduces the interest charged in future months. Because mortgage interest is calculated on the remaining balance, even a small regular overpayment compounds into significant savings over the life of the loan.</p>
+    <p style="font-size:14px;color:#475569;margin:0">For example, overpaying £200/month on a 25-year £250,000 mortgage at 4.5% saves over £26,000 in interest and cuts the mortgage by around 4 years.</p>
+  </div>
+</div>
+
+<footer>
+  <p>⚡ <a href="https://tabutility.com">Tabutility</a> — Free financial calculators · Results are estimates only, not financial advice</p>
+</footer>
+
+<script>
+function fmt(n){return'£'+Math.round(n).toLocaleString('en-GB')}
+function fmtD(months){
+  const now=new Date();
+  now.setMonth(now.getMonth()+months);
+  return now.toLocaleDateString('en-GB',{month:'short',year:'numeric'});
+}
+
+function calcMonths(balance,monthlyRate,payment){
+  if(payment<=balance*monthlyRate)return Infinity;
+  return Math.ceil(-Math.log(1-balance*monthlyRate/payment)/Math.log(1+monthlyRate));
+}
+
+function totalInterest(balance,monthlyRate,payment,months){
+  return payment*months-balance;
+}
+
+function calculate(){
+  const balance=parseFloat(document.getElementById('balance').value)||0;
+  const annualRate=parseFloat(document.getElementById('rate').value)||0;
+  const termYears=parseFloat(document.getElementById('term').value)||0;
+  const overpay=parseFloat(document.getElementById('overpay').value)||0;
+
+  const mr=annualRate/100/12;
+  const n=termYears*12;
+
+  // Base payment (standard amortisation)
+  const basePayment=balance*(mr*Math.pow(1+mr,n))/(Math.pow(1+mr,n)-1);
+  const baseMonths=n;
+  const baseInterest=basePayment*baseMonths-balance;
+
+  // With overpayment
+  const newPayment=basePayment+overpay;
+  const newMonths=calcMonths(balance,mr,newPayment);
+  const newInterest=newPayment*newMonths-balance;
+
+  const monthsSaved=baseMonths-newMonths;
+  const yearsSaved=Math.floor(monthsSaved/12);
+  const remMonths=monthsSaved%12;
+  const interestSaved=baseInterest-newInterest;
+
+  document.getElementById('r-interest-saved').textContent=fmt(interestSaved);
+  document.getElementById('r-years-saved').textContent=yearsSaved+(remMonths>0?' yr '+remMonths+' mo':' yrs');
+  document.getElementById('r-months-saved').textContent=monthsSaved+' months';
+  document.getElementById('r-new-payoff').textContent=new Date().getFullYear()+Math.floor(newMonths/12);
+
+  document.getElementById('r-base-payment').textContent=fmt(basePayment)+'/mo';
+  document.getElementById('r-base-total').textContent=fmt(basePayment*baseMonths);
+  document.getElementById('r-base-interest').textContent=fmt(baseInterest);
+  document.getElementById('r-base-date').textContent=fmtD(baseMonths);
+
+  document.getElementById('r-new-payment').textContent=fmt(newPayment)+'/mo';
+  document.getElementById('r-new-total').textContent=fmt(newPayment*newMonths);
+  document.getElementById('r-new-interest').textContent=fmt(newInterest);
+  document.getElementById('r-new-date').textContent=fmtD(newMonths);
+
+  document.getElementById('results').classList.add('show');
+  try{(adsbygoogle=window.adsbygoogle||[]).push({});}catch(e){}
+}
+
+calculate();
+</script>
+</body>
+</html>
